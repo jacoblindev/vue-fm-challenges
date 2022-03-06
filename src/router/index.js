@@ -15,7 +15,7 @@ const router = createRouter({
       path: "/scaffold",
       name: "scaffold",
       component: () => import("@/views/ScaffoldViews/ScaffoldView.vue"),
-      meta: { title: "Vue 3 | JLDev" },
+      meta: { title: "Vue 3 Scaffold | JLDev" },
       children: [
         {
           path: "",
