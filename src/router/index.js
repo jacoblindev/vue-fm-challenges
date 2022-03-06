@@ -8,12 +8,14 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      meta: { title: "FM Challenges | JLDev" },
     },
     {
       // This is the Vue 3 default scaffold views, keep it as reference!
       path: "/scaffold",
       name: "scaffold",
       component: () => import("@/views/ScaffoldViews/ScaffoldView.vue"),
+      meta: { title: "Vue 3 | JLDev" },
       children: [
         {
           path: "",
@@ -32,8 +34,14 @@ const router = createRouter({
       name: "FAQ-Accordion-Card",
       component: () =>
         import("@/views/FAQAccordionCard/FAQAccordionCardView.vue"),
+      meta: { title: "FAQ Accordion Card | JLDev" },
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  window.document.title = to.meta.title;
+  next();
 });
 
 export default router;
