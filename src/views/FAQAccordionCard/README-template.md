@@ -43,12 +43,12 @@ Users should be able to:
 
 - [Vue 3](https://vuejs.org/) - The Progressive JavaScript Framework
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ### What I learned
+
+- When dealing with `srcset` tag using ***.svg*** image file, the svg need to specified the `width` & `height` attributes in order to show on the DOM...! The provided resource's mobile version svg image did not..., took me awhile to figure it out.
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
