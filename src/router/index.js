@@ -27,6 +27,12 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/faq-accordion-card",
+      name: "FAQ-Accordion-Card",
+      component: () =>
+        import("@/views/FAQAccordionCard/FAQAccordionCardView.vue"),
+    },
   ],
 });
 
