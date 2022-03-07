@@ -1,6 +1,7 @@
 <script setup>
+import { ref, computed } from "vue";
 import ChallengeCard from "../components/ChallengeCard.vue";
-
+const searchTerm = ref("");
 const challenges = [
   {
     title: "FAQ Accordion Card",
@@ -12,6 +13,15 @@ const challenges = [
     screenshot: "/Screenshots/faq-accordion-card-desktop.png",
   },
 ];
+const filteredChallenges = computed(() => {
+  if (searchTerm.value !== "") {
+    return challenges.filter((e) =>
+      e.title.toLowerCase().includes(searchTerm.value.toLowerCase())
+    );
+  } else {
+    return challenges;
+  }
+});
 </script>
 
 <template>
@@ -26,9 +36,18 @@ const challenges = [
       Frontend Mentor challenges help you improve your coding skills by building
       realistic projects.
     </q>
-    <hr />
+    <nav id="filter-navbar">
+      <h3>Challengs</h3>
+      <span>
+        <input
+          type="text"
+          v-model="searchTerm"
+          placeholder="Search by name..."
+        />
+      </span>
+    </nav>
     <section>
-      <template v-for="(challenge, index) in challenges" :key="index">
+      <template v-for="(challenge, index) in filteredChallenges" :key="index">
         <ChallengeCard v-bind:challenge="challenge" />
       </template>
     </section>
@@ -86,6 +105,36 @@ main section {
   flex-wrap: wrap;
   justify-content: center;
 }
+#filter-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7rem;
+  margin: 1.5rem 0;
+  border-top: 1px solid #6247aa;
+  border-bottom: 1px solid #6247aa;
+}
+#filter-navbar > h3,
+#filter-navbar > span {
+  padding: 0.5rem 2rem;
+  border-left: 1px solid #6247aa;
+  border-right: 1px solid #6247aa;
+}
+#filter-navbar input {
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+  padding: 0.4rem 2rem;
+  border-radius: 50px;
+  outline: none;
+  caret-color: #6247aa;
+  outline: 1px dashed #6247aa;
+  color: #c8b6ff;
+  font-size: 16px;
+}
+#filter-navbar input:focus {
+  outline: 2px solid #c8b6ff;
+}
 footer {
   font-weight: 300;
   padding: 1rem;
@@ -102,6 +151,17 @@ footer a {
   font-weight: bold;
 }
 @media screen and (max-width: 799px) {
+  #filter-navbar {
+    flex-direction: column;
+    padding: 0;
+  }
+  #filter-navbar > h3 {
+    padding: 0.5rem 2rem;
+    border: none;
+  }
+  #filter-navbar > span {
+    display: none;
+  }
   footer {
     flex-wrap: wrap;
     flex-direction: column;
