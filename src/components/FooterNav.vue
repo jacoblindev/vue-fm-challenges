@@ -25,19 +25,19 @@ nav {
     Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   padding: 1rem;
-  color: #f2f2f2;
-  background: #181818;
+  color: #6247aa;
+  background: #111;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .home-btn {
-  background: #f2f2f2;
+  background: #6247aa;
   padding: 0.4rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 nav a {
-  color: hsl(240, 73%, 65%);
+  color: #c8b6ff;
   text-decoration: none;
   font-weight: bold;
 }
