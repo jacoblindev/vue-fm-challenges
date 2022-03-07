@@ -10,8 +10,10 @@ import {
   faGithubSquare,
   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import {} from "@fortawesome/free-regular-svg-icons";
+import { faExternalLinkSquare } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faGithubSquare, faInstagramSquare);
+library.add(faGithubSquare, faInstagramSquare, faExternalLinkSquare);
 
 const app = createApp(App);
 

@@ -1,5 +1,17 @@
 <script setup>
-import { RouterLink } from "vue-router";
+import ChallengeCard from "../components/ChallengeCard.vue";
+
+const challenges = [
+  {
+    title: "FAQ Accordion Card",
+    level: "NEWBIE",
+    desc: "In this challenge, you'll be building out an FAQ accordion. This is anextremely common front-end pattern, so it's a great opportunity to get some practice in!",
+    source:
+      "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
+    route: "/faq-accordion-card",
+    screenshot: "/Screenshots/faq-accordion-card-desktop.png",
+  },
+];
 </script>
 
 <template>
@@ -9,15 +21,18 @@ import { RouterLink } from "vue-router";
     </a>
   </nav>
   <main>
-    <h2>
-      Here's where I practice my Vue 3 skills with Frontend Mentor challenges!
-    </h2>
+    <h2>Welcome to my Frontend Mentor's challenge solutions with Vue 3!</h2>
+    <q>
+      Frontend Mentor challenges help you improve your coding skills by building
+      realistic projects.
+    </q>
+    <hr />
+    <section>
+      <template v-for="(challenge, index) in challenges" :key="index">
+        <ChallengeCard v-bind:challenge="challenge" />
+      </template>
+    </section>
   </main>
-  <ul>
-    <li>
-      <RouterLink to="/faq-accordion-card">FAQ Accordion Card</RouterLink>
-    </li>
-  </ul>
   <footer>
     <h3>
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
@@ -41,23 +56,35 @@ import { RouterLink } from "vue-router";
   top: 0;
   left: 0;
   width: 100vw;
+  border-bottom: 1px solid #6247aa;
+  z-index: 99;
 }
 #home-navbar > a {
   text-decoration: none;
   margin: 0.5rem 0;
-  padding: 0.5rem 3rem;
+  padding: 0.2rem 3rem;
   border-left: 1px solid #6247aa;
   border-right: 1px solid #6247aa;
 }
 #home-navbar > a > img {
-  width: 3rem;
+  height: 6vh;
+  vertical-align: middle;
+}
+hr {
+  border: none;
+  border-top: 1px solid #6247aa;
+  margin: 1rem 0;
 }
 main {
-  min-height: 90vh;
-  padding: 8em 1em 0;
-}
-main > h2 {
+  min-height: 94vh;
+  padding: 6rem 2rem 6rem;
   text-align: center;
+}
+main section {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 footer {
   font-weight: 300;
@@ -67,13 +94,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
 }
 footer a {
   color: #c8b6ff;
   text-decoration: none;
   font-weight: bold;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 799px) {
   footer {
     flex-wrap: wrap;
     flex-direction: column;

@@ -32,9 +32,11 @@ nav {
   align-items: center;
 }
 .home-btn {
-  background: #6247aa;
   padding: 0.4rem 1.5rem;
-  border-radius: 4px;
+  border: 1px solid #6247aa;
+}
+.home-btn:hover {
+  background: #6247aa;
 }
 nav a {
   color: #c8b6ff;
