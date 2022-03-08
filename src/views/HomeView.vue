@@ -12,6 +12,15 @@ const challenges = [
     route: "/faq-accordion-card",
     screenshot: "/Screenshots/faq-accordion-card-desktop.png",
   },
+  {
+    title: "Four Card Feature Section",
+    level: "NEWBIE",
+    desc: "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
+    source:
+      "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
+    route: "/four-card-feature",
+    screenshot: "/Screenshots/four-card-feature-desktop.png",
+  },
 ];
 const filteredChallenges = computed(() => {
   if (searchTerm.value !== "") {

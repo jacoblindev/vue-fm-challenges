@@ -34,6 +34,9 @@ const props = defineProps(["challenge"]);
 .card {
   border: 1px solid #6247aa;
   max-width: calc(100vw / 5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card-img {
   padding: 1rem;
@@ -51,6 +54,7 @@ const props = defineProps(["challenge"]);
 .card-info {
   position: relative;
   padding: 1rem;
+  margin-bottom: auto;
   text-align: left;
 }
 .card-info > p {

@@ -36,6 +36,13 @@ const router = createRouter({
         import("@/views/FAQAccordionCard/FAQAccordionCardView.vue"),
       meta: { title: "FAQ Accordion Card | JLDev" },
     },
+    {
+      path: "/four-card-feature",
+      name: "Four-Card-Feature",
+      component: () =>
+        import("@/views/FourCardFeature/FourCardFeatureView.vue"),
+      meta: { title: "Four Card Feature | JLDev" },
+    },
   ],
 });
 
