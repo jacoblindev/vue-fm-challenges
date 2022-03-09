@@ -43,6 +43,13 @@ const router = createRouter({
         import("@/views/FourCardFeature/FourCardFeatureView.vue"),
       meta: { title: "Four Card Feature | JLDev" },
     },
+    {
+      path: "/social-media-dashboard",
+      name: "Social-Media-Dashboard",
+      component: () =>
+        import("@/views/SocialMediaDashboard/SocialMediaDashboardView.vue"),
+      meta: { title: "Social Media Dashboard | JLDev" },
+    },
   ],
 });
 

@@ -8,10 +8,10 @@ const props = defineProps(["challenge"]);
   <div class="card">
     <div class="card-img">
       <img :src="props.challenge.screenshot" :alt="props.challenge.title" />
+      <div class="tag">{{ props.challenge.level }}</div>
     </div>
     <div class="card-info">
       <h4>{{ props.challenge.title }}</h4>
-      <div class="tag">{{ props.challenge.level }}</div>
       <p>
         {{ props.challenge.desc }}
       </p>
@@ -39,8 +39,19 @@ const props = defineProps(["challenge"]);
   justify-content: space-between;
 }
 .card-img {
+  position: relative;
   padding: 1rem;
   border-bottom: 1px solid #6247aa;
+}
+.card-img .tag {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #6247aa;
+  padding: 0.15rem 1rem;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 30px;
 }
 .card-img img {
   width: 90%;
@@ -52,7 +63,6 @@ const props = defineProps(["challenge"]);
   transition: all 0.8s;
 }
 .card-info {
-  position: relative;
   padding: 1rem;
   margin-bottom: auto;
   text-align: left;
@@ -61,16 +71,6 @@ const props = defineProps(["challenge"]);
   margin-top: 1rem;
   font-size: 14px;
   color: #9f9f9f;
-}
-.card-info .tag {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: #6247aa;
-  padding: 0.15rem 1rem;
-  font-size: 10px;
-  font-weight: bold;
-  border-radius: 30px;
 }
 .card-action {
   border-top: 1px solid #6247aa;

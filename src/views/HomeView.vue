@@ -21,6 +21,15 @@ const challenges = [
     route: "/four-card-feature",
     screenshot: "/Screenshots/four-card-feature-desktop.png",
   },
+  {
+    title: "Social media dashboard with theme switcher",
+    level: "JUNIOR",
+    desc: "This challenge will be a perfect chance to practice your Grid skills. The color theme switcher also adds a nice additional test.",
+    source:
+      "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
+    route: "/social-media-dashboard",
+    screenshot: "/Screenshots/social-media-dashboard-desktop.png",
+  },
 ];
 const filteredChallenges = computed(() => {
   if (searchTerm.value !== "") {
