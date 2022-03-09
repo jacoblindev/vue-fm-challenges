@@ -10,7 +10,7 @@ const challenges = [
     source:
       "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
     route: "/faq-accordion-card",
-    screenshot: "/Screenshots/faq-accordion-card-desktop.png",
+    screenshot: "/vue-fm-challenges/Screenshots/faq-accordion-card-desktop.png",
   },
   {
     title: "Four Card Feature Section",
@@ -19,7 +19,7 @@ const challenges = [
     source:
       "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
     route: "/four-card-feature",
-    screenshot: "/Screenshots/four-card-feature-desktop.png",
+    screenshot: "/vue-fm-challenges/Screenshots/four-card-feature-desktop.png",
   },
   {
     title: "Social Media Dashboard with Theme Switcher",
@@ -28,7 +28,8 @@ const challenges = [
     source:
       "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
     route: "/social-media-dashboard",
-    screenshot: "/Screenshots/social-media-dashboard-desktop.png",
+    screenshot:
+      "/vue-fm-challenges/Screenshots/social-media-dashboard-desktop.png",
   },
 ];
 const filteredChallenges = computed(() => {
