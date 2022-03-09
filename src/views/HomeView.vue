@@ -22,7 +22,7 @@ const challenges = [
     screenshot: "/Screenshots/four-card-feature-desktop.png",
   },
   {
-    title: "Social media dashboard with theme switcher",
+    title: "Social Media Dashboard with Theme Switcher",
     level: "JUNIOR",
     desc: "This challenge will be a perfect chance to practice your Grid skills. The color theme switcher also adds a nice additional test.",
     source:
