@@ -31,6 +31,15 @@ const challenges = [
     screenshot:
       "/vue-fm-challenges/Screenshots/social-media-dashboard-desktop.png",
   },
+  {
+    title: "Intro Component with Sign-Up Form",
+    level: "NEWBIE",
+    desc: "Practice building out a sign-up form complete with client-side validation using JavaScript.",
+    source:
+      "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
+    route: "/intro-sign-up",
+    screenshot: "/vue-fm-challenges/Screenshots/intro-sign-up-desktop.png",
+  },
 ];
 const filteredChallenges = computed(() => {
   if (searchTerm.value !== "") {

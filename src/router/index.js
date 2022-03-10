@@ -50,6 +50,13 @@ const router = createRouter({
         import("@/views/SocialMediaDashboard/SocialMediaDashboardView.vue"),
       meta: { title: "Social Media Dashboard | JLDev" },
     },
+    {
+      path: "/intro-sign-up",
+      name: "Intro-Sign-Up",
+      component: () =>
+        import("@/views/IntroCompWithSignUp/IntroCompWithSignUpView.vue"),
+      meta: { title: "Intro with Sign Up | JLDev" },
+    },
   ],
 });
 
