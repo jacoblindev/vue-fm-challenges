@@ -33,3 +33,7 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Test Link
+
+[FAQ Readme](./src/views/FAQAccordionCard/README-template.md)
