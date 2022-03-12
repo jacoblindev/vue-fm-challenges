@@ -101,7 +101,7 @@ main section {
   justify-content: center;
 }
 #hero-section {
-  padding: 5rem;
+  padding: 10rem 5rem;
   flex-direction: column;
 }
 #filter-navbar {
@@ -150,6 +150,9 @@ footer a {
   font-weight: bold;
 }
 @media screen and (max-width: 799px) {
+  #hero-section {
+    padding: 3.5rem 1.5rem;
+  }
   #filter-navbar {
     flex-direction: column;
     padding: 0;
