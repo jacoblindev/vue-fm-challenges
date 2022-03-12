@@ -1,33 +1,14 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
       name: "home",
       component: HomeView,
       meta: { title: "FM Challenges | JLDev" },
-    },
-    {
-      // This is the Vue 3 default scaffold views, keep it as reference!
-      path: "/scaffold",
-      name: "scaffold",
-      component: () => import("@/views/ScaffoldViews/ScaffoldView.vue"),
-      meta: { title: "Vue 3 Scaffold | JLDev" },
-      children: [
-        {
-          path: "",
-          name: "Vue3",
-          component: () => import("@/views/ScaffoldViews/Vue3View.vue"),
-        },
-        {
-          path: "about",
-          name: "about",
-          component: () => import("@/views/ScaffoldViews/AboutView.vue"),
-        },
-      ],
     },
     {
       path: "/faq-accordion-card",
@@ -56,6 +37,10 @@ const router = createRouter({
       component: () =>
         import("@/views/IntroCompWithSignUp/IntroCompWithSignUpView.vue"),
       meta: { title: "Intro with Sign Up | JLDev" },
+    },
+    {
+      path: "/:catchAll(.*)",
+      redirect: "/",
     },
   ],
 });
