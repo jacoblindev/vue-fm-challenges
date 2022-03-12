@@ -28,4 +28,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: #c8b6ff;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.3rem;
+  background-color: #6247aa;
+  outline: 1px solid #6247aa;
+}
 </style>
