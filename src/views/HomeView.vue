@@ -1,53 +1,19 @@
 <script setup>
 import { ref, computed } from "vue";
+import { useChallengeStore } from "../stores/challenge";
 import ChallengeCard from "../components/ChallengeCard.vue";
+
+const challengeStore = useChallengeStore();
+
 const searchTerm = ref("");
-const challenges = [
-  {
-    title: "FAQ Accordion Card",
-    level: "NEWBIE",
-    desc: "In this challenge, you'll be building out an FAQ accordion. This is anextremely common front-end pattern, so it's a great opportunity to get some practice in!",
-    source:
-      "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
-    route: "/faq-accordion-card",
-    screenshot: "/vue-fm-challenges/Screenshots/faq-accordion-card-desktop.png",
-  },
-  {
-    title: "Four Card Feature Section",
-    level: "NEWBIE",
-    desc: "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
-    source:
-      "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
-    route: "/four-card-feature",
-    screenshot: "/vue-fm-challenges/Screenshots/four-card-feature-desktop.png",
-  },
-  {
-    title: "Social Media Dashboard with Theme Switcher",
-    level: "JUNIOR",
-    desc: "This challenge will be a perfect chance to practice your Grid skills. The color theme switcher also adds a nice additional test.",
-    source:
-      "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
-    route: "/social-media-dashboard",
-    screenshot:
-      "/vue-fm-challenges/Screenshots/social-media-dashboard-desktop.png",
-  },
-  {
-    title: "Intro Component with Sign-Up Form",
-    level: "NEWBIE",
-    desc: "Practice building out a sign-up form complete with client-side validation using JavaScript.",
-    source:
-      "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
-    route: "/intro-sign-up",
-    screenshot: "/vue-fm-challenges/Screenshots/intro-sign-up-desktop.png",
-  },
-];
+
 const filteredChallenges = computed(() => {
   if (searchTerm.value !== "") {
-    return challenges.filter((e) =>
+    return challengeStore.challenges.filter((e) =>
       e.title.toLowerCase().includes(searchTerm.value.toLowerCase())
     );
   } else {
-    return challenges;
+    return challengeStore.challenges;
   }
 });
 </script>
@@ -59,11 +25,17 @@ const filteredChallenges = computed(() => {
     </a>
   </nav>
   <main>
-    <h2>Welcome to my Frontend Mentor's challenge solutions with Vue 3!</h2>
-    <q>
-      Frontend Mentor challenges help you improve your coding skills by building
-      realistic projects.
-    </q>
+    <section id="hero-section">
+      <h2>Welcome to my Frontend Mentor's challenge solutions with Vue 3!</h2>
+      <q>
+        Frontend Mentor challenges help you improve your coding skills by
+        building realistic projects.
+      </q>
+      <p>
+        My goal is to use these challenges to practice my Vue 3 skills & vanilla
+        CSS skills.
+      </p>
+    </section>
     <nav id="filter-navbar">
       <h3>Challengs</h3>
       <span>
@@ -74,7 +46,7 @@ const filteredChallenges = computed(() => {
         />
       </span>
     </nav>
-    <section>
+    <section id="cards-section">
       <template v-for="(challenge, index) in filteredChallenges" :key="index">
         <ChallengeCard v-bind:challenge="challenge" />
       </template>
@@ -117,13 +89,8 @@ const filteredChallenges = computed(() => {
   height: 6vh;
   vertical-align: middle;
 }
-hr {
-  border: none;
-  border-top: 1px solid #6247aa;
-  margin: 1rem 0;
-}
 main {
-  min-height: 94vh;
+  min-height: 100vh;
   padding: 6rem 2rem 6rem;
   text-align: center;
 }
@@ -132,6 +99,10 @@ main section {
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+}
+#hero-section {
+  padding: 5rem;
+  flex-direction: column;
 }
 #filter-navbar {
   display: flex;
