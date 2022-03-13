@@ -43,6 +43,16 @@ export const useChallengeStore = defineStore({
         route: "/intro-sign-up",
         screenshot: "/vue-fm-challenges/Screenshots/intro-sign-up-desktop.png",
       },
+      {
+        title: "Single Price Grid Component",
+        level: "NEWBIE",
+        desc: "In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.",
+        source:
+          "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
+        route: "/single-price-grid",
+        screenshot:
+          "/vue-fm-challenges/Screenshots/single-price-grid-desktop.png",
+      },
     ],
   }),
   getters: {},

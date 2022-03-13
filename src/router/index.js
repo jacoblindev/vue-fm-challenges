@@ -39,6 +39,13 @@ const router = createRouter({
       meta: { title: "Intro with Sign Up | JLDev" },
     },
     {
+      path: "/single-price-grid",
+      name: "Single-Price-Grid",
+      component: () =>
+        import("@/views/SinglePriceGrid/SinglePriceGridView.vue"),
+      meta: { title: "Single Price Grid | JLDev" },
+    },
+    {
       path: "/:catchAll(.*)",
       redirect: "/",
     },
