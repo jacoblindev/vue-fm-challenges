@@ -9,14 +9,13 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+<!-- - [Acknowledgments](#acknowledgments) -->
 
 ## Overview
 
@@ -30,74 +29,62 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shots to come!!!](./screenshot.jpg)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![screen shot!](../../../public/Screenshots/faq-accordion-card-desktop.png)
 
 ## My process
 
 ### Built with
 
 - [Vue 3](https://vuejs.org/) - The Progressive JavaScript Framework
-- Semantic HTML5 markup
 - Flexbox
-- CSS Grid
+- Components
+- Conditional Rendering
+- Computed Properties
+- CSS Style Bindings
 
 ### What I learned
 
 - When dealing with `srcset` tag using ***.svg*** image file, the svg need to specified the `width` & `height` attributes in order to show on the DOM...! The provided resource's mobile version svg image did not..., took me awhile to figure it out.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- CSS Style Bindings:
 
-To see how you can add code snippets, see below:
+```js
+let qColor = computed(() => isOpen ? "hsl(238, 29%, 16%)" : "hsl(237, 12%, 33%)");
+let fontWeight = computed(() => isOpen ? "700" : "400");
+```
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<p id="question">
+  {{ question }}
+  <ArrowUp v-if="isOpen" />
+  <ArrowDown v-else />
+</p>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#question {
+  /* ... */
+  color: v-bind(qColor);
+  font-weight: v-bind(fontWeight);
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- `<img>`: Need to look into how to manage different `srcset` & how to style it?!
+- CSS background-img related style methods?!
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Vue.js Official Doc](https://vuejs.org/api/sfc-css-features.html#v-bind-in-css) - `v-bind()` in CSS
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-- Instagram - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [JLDev](https://jacoblindev.github.io/vue-fm-challenges/)
+- Frontend Mentor - [@jacoblindev](https://www.frontendmentor.io/profile/jacoblindev)
+- Instagram - [@jacoblindev](https://www.instagram.com/jacoblindev/)
+- Twitter - [@Jacob20840321](https://twitter.com/Jacob20840321)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+<!-- ## Acknowledgments
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit. -->

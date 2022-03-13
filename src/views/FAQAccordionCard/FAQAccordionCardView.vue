@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from "vue";
 import FooterNav from "../../components/FooterNav.vue";
-import AccordinItem from "../../components/FAQAccordionCardComps/AccordinItem.vue";
+import AccordinItem from "./components/AccordinItem.vue";
 
 const faqs = reactive([
   {
@@ -48,7 +48,7 @@ function showAnswer(index) {
     <div class="faq-card">
       <div class="card-img">
         <img
-          src="../../assets/FAQAccordionCardImgs/illustration-woman-online-mobile.svg"
+          src="./assets/illustration-woman-online-mobile.svg"
           alt="Woman online"
         />
       </div>
@@ -95,7 +95,7 @@ main {
   width: 472px;
   display: flex;
   align-items: center;
-  background-image: url(../../assets/FAQAccordionCardImgs/bg-pattern-desktop.svg);
+  background-image: url(./assets/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-position: center right 0;
 }
@@ -128,7 +128,7 @@ li {
     height: 104px; /** Background image's height */
     align-items: unset;
     justify-content: center;
-    background-image: url(../../assets/FAQAccordionCardImgs/bg-pattern-mobile.svg);
+    background-image: url(./assets/bg-pattern-mobile.svg);
     background-position: center;
   }
   .card-img img {
