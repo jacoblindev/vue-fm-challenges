@@ -60,6 +60,13 @@ const router = createRouter({
       meta: { title: "Article Preview | JLDev" },
     },
     {
+      path: "/social-proof-section",
+      name: "Social-Proof-Section",
+      component: () =>
+        import("@/views/SocialProofSection/SocialProofSectionView.vue"),
+      meta: { title: "Social Proof Section | JLDev" },
+    },
+    {
       path: "/:catchAll(.*)",
       redirect: "/",
     },

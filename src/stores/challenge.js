@@ -72,6 +72,16 @@ export const useChallengeStore = defineStore({
         screenshot:
           "/vue-fm-challenges/Screenshots/article-preview-desktop.png",
       },
+      {
+        title: "Social Proof Section",
+        level: "NEWBIE",
+        desc: "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
+        source:
+          "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
+        route: "/social-proof-section",
+        screenshot:
+          "/vue-fm-challenges/Screenshots/social-proof-section-desktop.png",
+      },
     ],
   }),
   getters: {},
