@@ -46,6 +46,13 @@ const router = createRouter({
       meta: { title: "Single Price Grid | JLDev" },
     },
     {
+      path: "/data-storage",
+      name: "Data-Storage",
+      component: () =>
+        import("@/views/DataStorageComponent/DataStorageView.vue"),
+      meta: { title: "Data Storage | JLDev" },
+    },
+    {
       path: "/:catchAll(.*)",
       redirect: "/",
     },

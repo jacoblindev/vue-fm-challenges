@@ -53,6 +53,15 @@ export const useChallengeStore = defineStore({
         screenshot:
           "/vue-fm-challenges/Screenshots/single-price-grid-desktop.png",
       },
+      {
+        title: "Data Storage Component",
+        level: "JUNIOR",
+        desc: "This component has some interesting CSS challenges in the design. If you're looking to test your CSS skills, this will be a great project for you!",
+        source:
+          "https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n",
+        route: "/data-storage",
+        screenshot: "/vue-fm-challenges/Screenshots/data-storage-desktop.png",
+      },
     ],
   }),
   getters: {},
