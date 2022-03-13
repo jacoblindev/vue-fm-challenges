@@ -62,6 +62,16 @@ export const useChallengeStore = defineStore({
         route: "/data-storage",
         screenshot: "/vue-fm-challenges/Screenshots/data-storage-desktop.png",
       },
+      {
+        title: "Article Preview Component",
+        level: "NEWBIE",
+        desc: "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
+        source:
+          "https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
+        route: "/article-preview",
+        screenshot:
+          "/vue-fm-challenges/Screenshots/article-preview-desktop.png",
+      },
     ],
   }),
   getters: {},

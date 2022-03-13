@@ -53,6 +53,13 @@ const router = createRouter({
       meta: { title: "Data Storage | JLDev" },
     },
     {
+      path: "/article-preview",
+      name: "Article-Preview",
+      component: () =>
+        import("@/views/ArticlePreviewComponent/ArticlePreviewView.vue"),
+      meta: { title: "Article Preview | JLDev" },
+    },
+    {
       path: "/:catchAll(.*)",
       redirect: "/",
     },
