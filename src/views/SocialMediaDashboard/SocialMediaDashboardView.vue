@@ -41,10 +41,7 @@ function themeSwitch() {
     <main>
       <div class="card card-f">
         <div class="title">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-facebook.svg"
-            alt="Facebook-logo"
-          />
+          <img src="./assets/icon-facebook.svg" alt="Facebook-logo" />
           <p>@jacoblindev</p>
         </div>
         <div class="numbers">
@@ -52,19 +49,13 @@ function themeSwitch() {
           <span>FOLLOWERS</span>
         </div>
         <div class="updates up">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-up.svg"
-            alt="Up-icon"
-          />
+          <img src="./assets/icon-up.svg" alt="Up-icon" />
           <span>12 Today</span>
         </div>
       </div>
       <div class="card card-t">
         <div class="title">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-twitter.svg"
-            alt="Twitter-logo"
-          />
+          <img src="./assets/icon-twitter.svg" alt="Twitter-logo" />
           <p>@jacoblindev</p>
         </div>
         <div class="numbers">
@@ -72,19 +63,13 @@ function themeSwitch() {
           <span>FOLLOWERS</span>
         </div>
         <div class="updates up">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-up.svg"
-            alt="Up-icon"
-          />
+          <img src="./assets/icon-up.svg" alt="Up-icon" />
           <span>99 Today</span>
         </div>
       </div>
       <div class="card card-i">
         <div class="title">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-instagram.svg"
-            alt="Instagram-logo"
-          />
+          <img src="./assets/icon-instagram.svg" alt="Instagram-logo" />
           <p>@jacoblindev</p>
         </div>
         <div class="numbers">
@@ -92,19 +77,13 @@ function themeSwitch() {
           <span>FOLLOWERS</span>
         </div>
         <div class="updates up">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-up.svg"
-            alt="Up-icon"
-          />
+          <img src="./assets/icon-up.svg" alt="Up-icon" />
           <span>2008 Today</span>
         </div>
       </div>
       <div class="card card-y">
         <div class="title">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-youtube.svg"
-            alt="YouTube-logo"
-          />
+          <img src="./assets/icon-youtube.svg" alt="YouTube-logo" />
           <p>@jacoblindev</p>
         </div>
         <div class="numbers">
@@ -112,10 +91,7 @@ function themeSwitch() {
           <span>SUBSCRIBER</span>
         </div>
         <div class="updates down">
-          <img
-            src="../../assets/SocialMediaDashboard/icon-down.svg"
-            alt="Down-icon"
-          />
+          <img src="./assets/icon-down.svg" alt="Down-icon" />
           <span>88 Today</span>
         </div>
       </div>
@@ -128,120 +104,96 @@ function themeSwitch() {
           <h4>Page Views</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-facebook.svg"
+            src="./assets/icon-facebook.svg"
             alt="Facebook-logo"
           />
           <p>88</p>
           <span class="up"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-up.svg"
-              alt="Up-icon"
-            />3%</span
+            ><img src="./assets/icon-up.svg" alt="Up-icon" />3%</span
           >
         </div>
         <div class="states">
           <h4>Likes</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-facebook.svg"
+            src="./assets/icon-facebook.svg"
             alt="Facebook-logo"
           />
           <p>58</p>
           <span class="down"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-down.svg"
-              alt="Down-icon"
-            />5%</span
+            ><img src="./assets/icon-down.svg" alt="Down-icon" />5%</span
           >
         </div>
         <div class="states">
           <h4>Likes</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-instagram.svg"
+            src="./assets/icon-instagram.svg"
             alt="Instagram-logo"
           />
           <p>5678</p>
           <span class="up"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-up.svg"
-              alt="Up-icon"
-            />300%</span
+            ><img src="./assets/icon-up.svg" alt="Up-icon" />300%</span
           >
         </div>
         <div class="states">
           <h4>Profile Views</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-instagram.svg"
+            src="./assets/icon-instagram.svg"
             alt="Instagram-logo"
           />
           <p>58k</p>
           <span class="up"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-up.svg"
-              alt="Up-icon"
-            />1300%</span
+            ><img src="./assets/icon-up.svg" alt="Up-icon" />1300%</span
           >
         </div>
         <div class="states">
           <h4>Retweets</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-twitter.svg"
+            src="./assets/icon-twitter.svg"
             alt="Twitter-logo"
           />
           <p>118</p>
           <span class="up"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-up.svg"
-              alt="Up-icon"
-            />308%</span
+            ><img src="./assets/icon-up.svg" alt="Up-icon" />308%</span
           >
         </div>
         <div class="states">
           <h4>Likes</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-twitter.svg"
+            src="./assets/icon-twitter.svg"
             alt="Twitter-logo"
           />
           <p>508</p>
           <span class="up"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-up.svg"
-              alt="Up-icon"
-            />550%</span
+            ><img src="./assets/icon-up.svg" alt="Up-icon" />550%</span
           >
         </div>
         <div class="states">
           <h4>Likes</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-youtube.svg"
+            src="./assets/icon-youtube.svg"
             alt="YouTube-logo"
           />
           <p>108</p>
           <span class="down"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-down.svg"
-              alt="Down-icon"
-            />50%</span
+            ><img src="./assets/icon-down.svg" alt="Down-icon" />50%</span
           >
         </div>
         <div class="states">
           <h4>Total Views</h4>
           <img
             class="logo"
-            src="../../assets/SocialMediaDashboard/icon-youtube.svg"
+            src="./assets/icon-youtube.svg"
             alt="YouTube-logo"
           />
           <p>1408</p>
           <span class="down"
-            ><img
-              src="../../assets/SocialMediaDashboard/icon-down.svg"
-              alt="Down-icon"
-            />12%</span
+            ><img src="./assets/icon-down.svg" alt="Down-icon" />12%</span
           >
         </div>
       </div>

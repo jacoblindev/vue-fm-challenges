@@ -17,10 +17,7 @@ import FooterNav from "../../components/FooterNav.vue";
       <div class="card cyan">
         <h3>Supervisor</h3>
         <p>Monitors activity to identify project roadblocks</p>
-        <img
-          src="../../assets/FourCardFeature/icon-supervisor.svg"
-          alt="icon-supervisor"
-        />
+        <img src="./assets/icon-supervisor.svg" alt="icon-supervisor" />
       </div>
 
       <div class="card red">
@@ -28,28 +25,19 @@ import FooterNav from "../../components/FooterNav.vue";
         <p>
           Scans our talent network to create the optimal team for your project
         </p>
-        <img
-          src="../../assets/FourCardFeature/icon-team-builder.svg"
-          alt="icon-team-builder"
-        />
+        <img src="./assets/icon-team-builder.svg" alt="icon-team-builder" />
       </div>
 
       <div class="card orange">
         <h3>Karma</h3>
         <p>Regularly evaluates our talent to ensure quality</p>
-        <img
-          src="../../assets/FourCardFeature/icon-karma.svg"
-          alt="icon-karma"
-        />
+        <img src="./assets/icon-karma.svg" alt="icon-karma" />
       </div>
 
       <div class="card blue">
         <h3>Calculator</h3>
         <p>Uses data from past projects to provide better delivery estimates</p>
-        <img
-          src="../../assets/FourCardFeature/icon-calculator.svg"
-          alt="icon-calculator"
-        />
+        <img src="./assets/icon-calculator.svg" alt="icon-calculator" />
       </div>
     </main>
   </section>

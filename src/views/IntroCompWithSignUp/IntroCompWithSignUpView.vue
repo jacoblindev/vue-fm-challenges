@@ -15,37 +15,6 @@ function checkField(e) {
     e.target.setAttribute("required", true);
   }
 }
-
-// function checkFirstName() {
-//   if (firstName.value == "") {
-//     firstName.setAttribute("required", "true");
-//     firstName.setAttribute("placeholder", "");
-//   }
-// }
-// firstName.addEventListener("blur", (event) => {
-//   if (event.target.value == "") {
-//     firstName.setAttribute("required", "true");
-//     firstName.setAttribute("placeholder", "");
-//   }
-// });
-// lastName.addEventListener("blur", (event) => {
-//   if (event.target.value == "") {
-//     lastName.setAttribute("required", "true");
-//     lastName.setAttribute("placeholder", "");
-//   }
-// });
-// email.addEventListener("blur", (event) => {
-//   if (event.target.value == "") {
-//     email.setAttribute("required", "true");
-//     email.setAttribute("placeholder", "");
-//   }
-// });
-// password.addEventListener("blur", (event) => {
-//   if (event.target.value == "") {
-//     password.setAttribute("required", "true");
-//     password.setAttribute("placeholder", "");
-//   }
-// });
 </script>
 
 <template>
@@ -75,10 +44,7 @@ function checkField(e) {
             @blur="checkField"
           />
           <span class="error">
-            <img
-              src="../../assets/IntroCompWithSignUp/icon-error.svg"
-              alt="error icon"
-            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
             <i>First Name cannot be empty</i>
           </span>
           <label for="lastName" hidden>Last Name</label>
@@ -92,10 +58,7 @@ function checkField(e) {
             @blur="checkField"
           />
           <span class="error">
-            <img
-              src="../../assets/IntroCompWithSignUp/icon-error.svg"
-              alt="error icon"
-            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
             <i>Last Name cannot be empty</i>
           </span>
           <label for="email" hidden>Email Address</label>
@@ -109,10 +72,7 @@ function checkField(e) {
             @blur="checkField"
           />
           <span class="error">
-            <img
-              src="../../assets/IntroCompWithSignUp/icon-error.svg"
-              alt="error icon"
-            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
             <i>Looks like this is not an email</i>
           </span>
           <label for="password" hidden>Password</label>
@@ -126,10 +86,7 @@ function checkField(e) {
             @blur="checkField"
           />
           <span class="error">
-            <img
-              src="../../assets/IntroCompWithSignUp/icon-error.svg"
-              alt="error icon"
-            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
             <i>Password cannot be empty</i>
           </span>
           <button type="submit">Claim your free trial</button>
@@ -157,7 +114,7 @@ function checkField(e) {
   --Dark-Blue: hsl(249, 10%, 26%);
   --Grayish-Blue: hsl(246, 25%, 77%);
 
-  background-image: url(../../assets/IntroCompWithSignUp/bg-intro-desktop.png);
+  background-image: url(./assets/bg-intro-desktop.png);
   background-color: var(--Primary-Red);
 }
 
@@ -297,7 +254,7 @@ main {
 
 @media screen and (max-width: 415px) {
   .intro-sign-up {
-    background-image: url(../../assets/IntroCompWithSignUp/bg-intro-mobile.png);
+    background-image: url(./assets/bg-intro-mobile.png);
   }
 
   main {
