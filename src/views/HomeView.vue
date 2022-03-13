@@ -265,6 +265,9 @@ footer a {
     flex-direction: column;
     padding: 0;
   }
+  #filter-navbar > span:first-child {
+    border: none;
+  }
   #filter-navbar > span:not(:first-child) {
     display: none;
   }
