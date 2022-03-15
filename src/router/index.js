@@ -67,6 +67,13 @@ const router = createRouter({
       meta: { title: "Social Proof Section | JLDev" },
     },
     {
+      path: "/advice-generator",
+      name: "Advice-Generator-App",
+      component: () =>
+        import("@/views/AdviceGeneratorApp/AdviceGeneratorView.vue"),
+      meta: { title: "Advice Generator | JLDev" },
+    },
+    {
       path: "/:catchAll(.*)",
       redirect: "/",
     },
