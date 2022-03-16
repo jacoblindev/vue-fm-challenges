@@ -74,6 +74,13 @@ const router = createRouter({
       meta: { title: "Advice Generator | JLDev" },
     },
     {
+      path: "/rock-paper-scissors",
+      name: "Rock-Paper-Scissors",
+      component: () =>
+        import("@/views/RockPaperScissors/RockPaperScissorsView.vue"),
+      meta: { title: "Rock Paper Scissors | JLDev" },
+    },
+    {
       path: "/:catchAll(.*)",
       redirect: "/",
     },
