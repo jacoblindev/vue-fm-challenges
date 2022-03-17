@@ -8,9 +8,26 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
-import { faExternalLinkSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faExternalLinkSquare,
+  faHand,
+  faHandBackFist,
+  faHandScissors,
+  faHandSpock,
+  faHandLizard,
+  faQuestion,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faGithub, faExternalLinkSquare);
+library.add(
+  faGithub,
+  faExternalLinkSquare,
+  faHand,
+  faHandBackFist,
+  faHandScissors,
+  faHandSpock,
+  faHandLizard,
+  faQuestion
+);
 
 const app = createApp(App);
 
