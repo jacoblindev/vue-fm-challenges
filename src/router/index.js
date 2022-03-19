@@ -76,8 +76,7 @@ const router = createRouter({
     {
       path: "/rock-paper-scissors",
       name: "Rock-Paper-Scissors",
-      component: () =>
-        import("@/views/RockPaperScissors/RockPaperScissorsView.vue"),
+      component: () => import("@/views/RockPaperScissors/RPSLSGameView.vue"),
       meta: { title: "Rock Paper Scissors | JLDev" },
     },
     {
